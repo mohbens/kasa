@@ -1,0 +1,126 @@
+
+
+
+.body{
+    height: 100%;
+    margin-bottom: 200px;
+}
+
+
+.infos-appart{
+color: #FF6060;
+
+}
+.arrow{
+    position: absolute;
+    right: 1rem;
+}
+
+
+.dropDownTitleDiv{
+    position: relative;
+    display: flex;
+    background-color: #FF6060;
+    align-items: center;
+    font-size: 18px;
+    height: 52px;
+    width: 550px;
+    margin-right:15px ;
+    padding-left: 20px;
+    border-radius: 10px;
+    color: white;
+    justify-content: space-between;
+    
+    
+}
+
+.dropdown-infos{
+
+    width: 550px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 20px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.description{
+    width: 50%;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+
+.info-section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (width <=768px ){
+        flex-direction: column;
+        
+        
+    }
+    
+}
+.tag-rate{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    
+    align-items: center
+
+}
+.rating{
+    font-size: xxx-large;
+}
+
+.Host{
+    display: flex;
+}
+.hostPic{
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.hostName{
+    font-size: x-large;
+    margin: 15px;
+}
+
+
+.title{
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.infos-chambre{
+    display: flex;
+    
+}
+
+
+.equipments{
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.tags{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.tag{
+    font-size: 14px;
+    background-color: #FF6060;
+    color: white;
+    height: 25px;
+    padding: 5px 5px 0px 5px ;
+    margin-right: 20px;
+    border-radius: 10px;
+
+}
