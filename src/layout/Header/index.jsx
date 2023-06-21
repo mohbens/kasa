@@ -11,6 +11,7 @@ function Header() {
   return(
     <div className="header">
       {getLogo("#FF6060", 211 )}
+      
       <nav className="Navbar" >
         {getPages().filter(element => element.nav !== undefined).map((element,index) => {
           return (

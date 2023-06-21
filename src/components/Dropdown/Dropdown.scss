@@ -1,45 +1,34 @@
 
-.dropDownTitleDiv{
- 
-    background-color:"#FF6060" ;
-    position: relative;
-    display: flex;
-    background-color: #FF6060;
-    align-items: center;
-    font-size: 18px;
-    height: 52px;
-    width: 95%;
-    padding-left: 20px;
-    border-radius: 10px;
-    color: white;
-    justify-content: space-between;
-    margin: auto;
-}
+
 .dropdown-infos{
-    padding: 25px;
+    font: Montserrat;
     color: #FF6060;
-    
+    padding: 25px;
     width: 80%;
-   font-size: 24px;
-   font: Montserrat;
-   font-weight: 400;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 15px;
+    @media screen and (max-width: 768px){
 
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 480px){
+        padding: 10px;
+        font-size: 12px;
+    }
 
 }
+
 .rotate{
-    transform: rotate(180deg)
+    transform: rotate(180deg);
+    transition: 0.05s ease-in-out;
 }
 
 
-.NavText:hover{
-    text-decoration: underline;
-}
+
 .dropDowntab{
-   margin-top: 31px;
-}
-.Description{
-    width: 50%;
-}
-.Equipments{
-    width: 50%;
+   margin-top: 31px auto auto auto;
+   align-items: center;
+  
 }

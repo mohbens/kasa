@@ -1,8 +1,8 @@
 
-import { ShowCarousel } from "../components/Logement/Details/Carousel";
+import { ShowCarousel } from "../components/Logement/Carousel/Carousel";
 import { getLogementById } from "../datas/ListeLogement"
 import NotFound from "./D_404";
-import "../components/Logement/Details/Carousel.scss"
+import "../components/Logement/Carousel/Carousel.scss"
 import {ShowInfos}  from "../components/Logement/Details/infos/infos";
 
 // import Collapse from "../components/Collaps/Collaps";

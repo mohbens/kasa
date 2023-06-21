@@ -1,4 +1,4 @@
-import ArrowDown from "../../assets/arrowDown"
+import ArrowDown from "../arrows/arrowDown"
 // import ArrowUp from "../../assets/arrowUp"
 import React,{ useState } from "react"
 
@@ -30,9 +30,7 @@ export function Dropdown(title , details){
             </div>
             {dropDownVisible &&
                 <div className="dropdown-infos">
-                    
-                                     
-                    
+                                        
                     {
                         Array.isArray(details)
                         ? details.map((element,index) => {

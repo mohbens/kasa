@@ -6,13 +6,13 @@ function getPages(){
     return [
         {
             path: '/',
-            label: 'Home',
+            label: 'Acceuil',
             component: Home,
             nav: true
         },
         {
-            path: '/APropos',
-            label: 'APropos',
+            path: '/about',
+            label: 'A Propos',
             component: APropos,
             nav: true
         },

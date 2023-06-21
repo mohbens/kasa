@@ -23,54 +23,73 @@ color: #FF6060;
     background-color: #FF6060;
     align-items: center;
     font-size: 18px;
-    height: 52px;
-    width: 550px;
+    height: 47px;
+    width: auto;
     margin-right:15px ;
     padding-left: 20px;
     border-radius: 10px;
     color: white;
     justify-content: space-between;
+      
     
+    @media screen and (max-width: 480px){
+        margin-top: 10px;
+        font-size: 13px;
+        height: 30px;
+        padding-left: 10px;
     
+    }
 }
+
+
+
 
 .dropdown-infos{
 
     width: 550px;
     padding-right: 15px;
     padding-left: 15px;
-    margin-top: 20px;
     justify-content: center;
     font-size: 18px;
 }
 
-.description{
-    width: 50%;
-    font-size: 18px;
-    padding-left: 30px;
-    padding-right: 30px;
 
+
+.allAbouts{
+   
+    margin: auto;
+  
+    width: 80%;
 }
-
 
 .info-section1{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    @media screen and (width <=768px ){
+
+
+    @media screen and (max-width: 480px){
+                
         flex-direction: column;
         
-        
-    }
+     }
     
 }
-.tag-rate{
+.section-title-tags{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    
-    align-items: center
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media screen and (max-width: 768px){
+        margin:0px 30px 25px 30px;
+        
+        flex-direction: column;
+        
+     }
+   
+}
+.info-section2{
+    margin-top: 30px;
 
 }
 .rating{
@@ -79,16 +98,21 @@ color: #FF6060;
 
 .Host{
     display: flex;
+    margin: 15px;
+    align-items: center;
+
 }
 .hostPic{
     height: 64px;
     width: 64px;
     object-fit: cover;
     border-radius: 50%;
+    
 }
 .hostName{
     font-size: x-large;
-    margin: 15px;
+    
+    width: 100px;
 }
 
 
@@ -99,15 +123,40 @@ color: #FF6060;
 }
 .infos-chambre{
     display: flex;
+    @media screen and (max-width: 480px){
+
+        flex-direction: column;
+        
+     }
     
 }
 
+.Description{
+    width: 50%;
+    font-size: 18px;
+    
+    padding-right: 30px;
 
-.equipments{
+    @media screen and (max-width: 480px){
+        width: 90%;
+        
+     }
+
+}
+
+.Equipments{
     width: 50%;
     padding-left: 30px;
-    padding-right: 30px;
+    
+    
+    
+    @media screen and (max-width: 480px){
+        width: 90%;
+
+        
+     }
 }
+
 
 .tags{
     display: flex;

@@ -1,4 +1,4 @@
-import {Show404} from '../components/_404/_404.jsx'
+import {Show404} from '../layout/_404/_404.jsx'
 
 
 function NotFound() {

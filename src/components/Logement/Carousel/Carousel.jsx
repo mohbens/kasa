@@ -1,8 +1,8 @@
 
 import { useState } from "react"
 import "./Carousel.scss"
-import ArrowLeft from "../../../assets/arrowLeft"
-import ArrowRight from "../../../assets/arrowRight"
+import ArrowLeft from "../../arrows/arrowLeft"
+import ArrowRight from "../../arrows/arrowRight"
 
 
 export function ShowCarousel(pictures) {
