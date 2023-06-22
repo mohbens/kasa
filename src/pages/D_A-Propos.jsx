@@ -8,9 +8,9 @@ function APropos() {
 
   
     return (
-      <div  > 
+      <div className="aboutContainer" > 
          { SectionImage(background,"")}
-          <div className="allAbouts">
+          <div className="allAbouts ">
 
             {About.map((section,index )=>{
               

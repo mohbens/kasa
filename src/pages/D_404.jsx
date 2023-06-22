@@ -3,7 +3,7 @@ import {Show404} from '../layout/_404/_404.jsx'
 
 function NotFound() {
     return (
-      <div>
+      <div className='all'>
         {Show404()}
       </div>
     )
