@@ -2,7 +2,6 @@ import {About} from "../datas/About"
 import {Dropdown} from "../components/Dropdown/Dropdown"
 import {SectionImage} from "../components/_Section1/_Section1.jsx"
 import background from "../assets/IMG2.png"
-// import "../styles/D_A_Propos.scss"
 
 function APropos() {
   return (
