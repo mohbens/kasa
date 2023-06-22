@@ -2,7 +2,7 @@ function Rate(rating) {
   var element = []
 
   for (var i = 1; i <= 5; i++) {
-    var color = i <= rating ? '#FF6060' : '#E3E3E3'
+    var color = i <= rating ? "#FF6060" : "#E3E3E3"
     element.push(
       <svg
         style={{fill: color}}

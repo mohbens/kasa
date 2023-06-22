@@ -1,4 +1,4 @@
-@import '../../../../assets/colors.scss';
+@import "../../../../assets/colors.scss";
 
 .Thumbnail {
   position: relative;
@@ -19,7 +19,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     z-index: 10;
     position: absolute;
     top: 0;

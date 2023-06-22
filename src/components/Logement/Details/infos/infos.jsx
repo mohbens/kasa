@@ -1,7 +1,7 @@
-import './infos.scss'
-import {Dropdown} from '../../../Dropdown/Dropdown'
+import "./infos.scss"
+import {Dropdown} from "../../../Dropdown/Dropdown"
 
-import Rate from '../../../rate'
+import Rate from "../../../rate"
 export function ShowInfos(logement) {
   return (
     <div className="infos-appart">
@@ -38,9 +38,9 @@ export function ShowInfos(logement) {
       </div>
 
       <div className="info-section2">
-        {Dropdown('Description', logement.description)}
+        {Dropdown("Description", logement.description)}
 
-        {Dropdown('Equipments', logement.equipments)}
+        {Dropdown("Equipments", logement.equipments)}
       </div>
     </div>
   )

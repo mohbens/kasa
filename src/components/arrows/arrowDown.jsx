@@ -1,6 +1,6 @@
 function ArrowDown(props) {
-  var classN = props.className ? props.className : ''
-  classN = classN + ' arrow arroDown'
+  var classN = props.className ? props.className : ""
+  classN = classN + " arrow arroDown"
   return (
     <svg
       className={classN}

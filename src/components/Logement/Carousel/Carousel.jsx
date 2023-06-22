@@ -1,7 +1,7 @@
-import {useState} from 'react'
-import './Carousel.scss'
-import ArrowLeft from '../../arrows/arrowLeft'
-import ArrowRight from '../../arrows/arrowRight'
+import {useState} from "react"
+import "./Carousel.scss"
+import ArrowLeft from "../../arrows/arrowLeft"
+import ArrowRight from "../../arrows/arrowRight"
 
 export function ShowCarousel(pictures) {
   const [slide, setSlide] = useState(0)
@@ -16,7 +16,7 @@ export function ShowCarousel(pictures) {
   }
 
   const indicator = () => {
-    return <div>{slide + 1 + '/' + pictures.length}</div>
+    return <div>{slide + 1 + "/" + pictures.length}</div>
   }
 
   return (
@@ -24,7 +24,7 @@ export function ShowCarousel(pictures) {
       {/* <div className="carousel-Imgs"> */}
       {pictures.length > 1 && (
         <div className="arrows" onClick={prevSlide}>
-          {' '}
+          {" "}
           <ArrowLeft className="arrow arrowleft" />
         </div>
       )}
@@ -37,8 +37,8 @@ export function ShowCarousel(pictures) {
             key={index}
             className={
               slide === index
-                ? 'slide slide-image'
-                : 'slide slide-hidden slide-image'
+                ? "slide slide-image"
+                : "slide slide-hidden slide-image"
             }
           />
         )

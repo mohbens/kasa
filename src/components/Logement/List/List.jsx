@@ -1,6 +1,6 @@
-import {ListeLogement} from '../../../datas/ListeLogement'
-import {Thumb} from './Thumb/Thumb'
-import './List.scss'
+import {ListeLogement} from "../../../datas/ListeLogement"
+import {Thumb} from "./Thumb/Thumb"
+import "./List.scss"
 
 export function List() {
   return (

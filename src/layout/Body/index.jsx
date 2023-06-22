@@ -1,7 +1,7 @@
-import './style.scss'
-import {Routes, Route} from 'react-router-dom'
-import {NotFound} from '../../pages/index'
-import getPages from '../../pages/index'
+import "./style.scss"
+import {Routes, Route} from "react-router-dom"
+import {NotFound} from "../../pages/index"
+import getPages from "../../pages/index"
 
 function Body() {
   return (

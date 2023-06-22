@@ -2,15 +2,15 @@ import {
   // BrowserRouter as Router
   // ,
   Link,
-} from 'react-router-dom'
-import './style.scss'
-import getPages from '../../pages'
-import getLogo from '../../assets/logo'
+} from "react-router-dom"
+import "./style.scss"
+import getPages from "../../pages"
+import getLogo from "../../assets/logo"
 
 function Header() {
   return (
     <div className="header">
-      {getLogo('#FF6060', 211)}
+      {getLogo("#FF6060", 211)}
 
       <nav className="Navbar">
         {getPages()

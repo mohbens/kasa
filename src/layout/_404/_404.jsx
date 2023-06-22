@@ -1,4 +1,4 @@
-import './_404.scss'
+import "./_404.scss"
 
 export function Show404() {
   return (

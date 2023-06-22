@@ -1,8 +1,8 @@
-import ArrowDown from '../arrows/arrowDown'
+import ArrowDown from "../arrows/arrowDown"
 // import ArrowUp from "../../assets/arrowUp"
-import React, {useState} from 'react'
+import React, {useState} from "react"
 
-import './Dropdown.scss'
+import "./Dropdown.scss"
 
 export function Dropdown(title, details) {
   const [dropDownVisible, setDropDownVisible] = useState(false)
@@ -10,9 +10,9 @@ export function Dropdown(title, details) {
   const showContent = () => {
     setDropDownVisible(!dropDownVisible)
   }
-  var classN = dropDownVisible ? 'rotate' : ''
+  var classN = dropDownVisible ? "rotate" : ""
   return (
-    <div className={'Dropdown '}>
+    <div className={"Dropdown "}>
       <div className="dropDownTitleDiv" onClick={showContent}>
         <div className="dropdown-title">{title}</div>
 
