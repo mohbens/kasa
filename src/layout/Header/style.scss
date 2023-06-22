@@ -1,10 +1,11 @@
+$mobilewidth: 480px;
 .header{
 
 	display: flex;
 	font-family: Montserrat;
-	padding: 40px 15px 40px 15px;
 	
-	margin: 20px auto 20px auto;
+	
+	margin: 40px auto 40px auto;
  
 	text-decoration: none;
 	height: 68px;
@@ -15,24 +16,21 @@
 
 
 
-	@media screen and (max-width: 480px){
-        font-size: 24px;
+	@media screen and (max-width: $mobilewidth){
+		margin: 0;
+       margin-bottom: 16px;
+		font-size: 24px;
         height: 47px;
-        max-width: 335px;
-        left: 20px;
-        top: 83px;
+       
+       
         border-radius: 10px;
 		padding: 0;
-		margin: 20px;
+		
         
     }
 
 }
 
-.Navbar{
-
-	min-width: 140px;
-}
 
 .NavText:hover{
     text-decoration: underline;
@@ -40,7 +38,7 @@
 
 
 .NavText{
-padding-left: 20px;
+padding-left: 57px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
@@ -52,16 +50,10 @@ text-align: right;
 color: #FF6060;
 text-decoration: none;
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: $mobilewidth){
 	font-size: 12px;
+	padding-left: 10px;
 	
-	
-}
-
-
-@media screen and (max-width: 375px){
-	
-	min-width: 333px;
 	
 }
 
@@ -73,7 +65,7 @@ text-decoration: none;
 .logo {  
 	
 
-	@media screen and (max-width: 480px){
+	@media screen and (max-width: $mobilewidth){
 	width: 145px;	
 	font-size: 12px;
 	

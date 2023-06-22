@@ -17,7 +17,7 @@ export function Dropdown(title , details){
      var classN = (dropDownVisible) ? "rotate": "" ; 
         return(
 
-        <div className={"Dropdown "+title}>
+        <div className={"Dropdown "}>
             <div className="dropDownTitleDiv"  onClick={showContent} >
                 <div className='dropdown-title' >{title}</div>
                 

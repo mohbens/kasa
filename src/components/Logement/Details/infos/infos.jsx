@@ -11,10 +11,10 @@ export function ShowInfos(logement) {
                 <div className='section-title-tags'>
 
                 <div >                
-                    <h1 className="title">
+                    <div className="title">
                         {logement.title}
-                    </h1>
-                    <p className="location">{logement.location}</p>
+                    </div>
+                    <div className="location">{logement.location}</div>
 
                 </div> 
                 <div>
@@ -25,32 +25,34 @@ export function ShowInfos(logement) {
                 </div>
 
                 </div>
-            <div className=''>
+            <div className='hostUser'>
                         <div className="Host">
                         <div className='hostName'>{logement.host.name}</div>                      
                         <img className='hostPic' src={logement.host.picture} alt={logement.host.name} />
                         </div>                        
                         
 
-                    <div className="rating">
+                    
                         {Rate(logement.rating)}
-                        </div> 
+                        
                     </div>
 
             </div>
 
             <div className='info-section2'>
-            <div>
-                <div className="infos-chambre">
+            
+                
+                    
+
                     {Dropdown("Description" , logement.description)}
+                    
+
                     {Dropdown("Equipments" , logement.equipments)}
-                       
-                </div>
+              
 
 
                 
 
-            </div>
 
 
             </div>

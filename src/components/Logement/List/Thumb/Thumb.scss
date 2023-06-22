@@ -4,11 +4,10 @@
 
 .Thumbnail{
     position: relative;
-     width: 340px;
-    // width: 30%;
-    height: 340px;
-    margin: 25px 30px 25px 30px;
-   
+    width: 340px;
+    height: 340px; 
+    margin: 25px ;
+    
     border-radius: 10px;
 
 
@@ -16,19 +15,9 @@
     overflow: hidden;
     transition : box-shadow 0.2s ease-in-out;
 
-    
-    @media screen and (max-width: 1024px){
-        // width: 47%;   
-        
-    }
-    @media screen and (max-width: 768px){
-        margin: 25px 30px 25px 30px;
-       
-        font-size: 18px;
- 
-    }
+
     @media screen and (max-width: 480px){
-        margin: 15px auto 15px auto;
+        margin: 10px auto 10px auto;
         height: 255px;
         width: 335px;
     
@@ -60,7 +49,7 @@
         transition: transform 0.2s ease-in-out;
        
     }
-    h3{
+    .Title{
         z-index: 20;
         color: white;
         position: absolute;
@@ -68,7 +57,8 @@
         left: 20px;
         right: 20px;
         font-weight: 500;
-        
+        font-size: 18px;
+        margin: 0;
         
     }
 }

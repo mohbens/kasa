@@ -1,4 +1,4 @@
-
+$mobilewidth: 480px;
 
 .Carousel{
     position: relative;
@@ -8,13 +8,20 @@
     font-size: xx-large;
     width: auto;
     height: 415px;
+    border-radius: 25px;
+
+    @media screen and (max-width: $mobilewidth){
+        margin: 10px auto 10px auto;
+        height: 255px;
+        width: 335px;
+        border-radius: 10px;
+    
+    }
+    
     
     
 }
-.carousel-Imgs{
-    justify-content: center;
-    align-items: center;
-}
+
 
 .slide{
     border-radius: 25px;
@@ -23,6 +30,13 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+
+    @media screen and (max-width: $mobilewidth){
+        
+        border-radius: 10px;
+    
+    }
+    
    
 }
 
@@ -37,11 +51,14 @@
 .arrow {
     position: absolute; 
     filter: drop-shadow(0px 0px 5px #444);
+   
+    
     
 }
 .arrows{
     display: flex;
     align-items: center;
+    
 }
 
 .arrow:hover{
@@ -53,11 +70,24 @@ cursor: pointer;
 
 .arrowleft{
     left: 1rem;
+     
+    @media screen and (max-width: $mobilewidth){
+        
+        
+        width: 12px;
     
+    }
 }
 
 .arrowright{
-right: 1rem
+right: 1rem; 
+@media screen and (max-width: 480px){
+    
+    
+    width: 12px;
+
+}
+
 }
 
 .indecator{
@@ -68,6 +98,13 @@ right: 1rem
     font-size: xx-large;
 
     filter: drop-shadow(0px 0px 3px #000000);
+     
+    @media screen and (max-width: 480px){
+        
+        
+     display: none;
+    
+    }
 
 
 

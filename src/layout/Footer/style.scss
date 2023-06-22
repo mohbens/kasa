@@ -1,8 +1,8 @@
-
+$mobilewidth: 480px;
 .Footer {
 	display: flex;
-	margin-top: auto;
-	padding: 32px;
+	
+	// padding: 32px;
 	border-top: solid 3px black;
 	flex-direction: column;
 	align-items: center;
@@ -26,7 +26,7 @@ text-align: center;
 color: #FFFFFF;
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: $mobilewidth){
 	font-size: 12px;
 	justify-content: center;
 	align-items: center;	
@@ -39,7 +39,7 @@ color: #FFFFFF;
 	bottom: 50%;	
 
 
-	@media screen and (max-width: 500px){
+	@media screen and (max-width: $mobilewidth){
 		
 	font-size: 12px;
 		

@@ -1,21 +1,25 @@
-
+$mobilewidth: 480px;
 .List{
-    margin-top: 10px;
-    // background: #ebebeb;
+   
 border-radius: 25px;
     
 }
 .listThumb{
     list-style-type: none;
-    
+    background-color: #F6F6F6;
     justify-content: center;
+    border-radius: 25px;
+    padding:31px 0px 31px 0px;
     
     display: flex;
     flex-wrap: wrap;
     max-width: 1240px;
 
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: $mobilewidth){
+        width: auto;
+        background-color: white;
 
+        padding: 0;
 
         
     }
