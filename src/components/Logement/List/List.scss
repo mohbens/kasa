@@ -1,28 +1,22 @@
 $mobilewidth: 480px;
-.List{
-   
-border-radius: 25px;
-    
+.List {
+  border-radius: 25px;
 }
-.listThumb{
-    list-style-type: none;
-    background-color: #F6F6F6;
-    justify-content: center;
-    border-radius: 25px;
-    padding:31px 0px 31px 0px;
-    
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1240px;
+.listThumb {
+  list-style-type: none;
+  background-color: #f6f6f6;
+  justify-content: center;
+  border-radius: 25px;
+  padding: 31px 0px 31px 0px;
 
-    @media screen and (max-width: $mobilewidth){
-        width: auto;
-        background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1240px;
 
-        padding: 0;
+  @media screen and (max-width: $mobilewidth) {
+    width: auto;
+    background-color: white;
 
-        
-    }
-
-
+    padding: 0;
+  }
 }

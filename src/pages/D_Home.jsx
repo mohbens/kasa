@@ -1,19 +1,17 @@
-import { List } from "../components/Logement/List/List"
-import {SectionImage} from  "../components/_Section1/_Section1.jsx"
-import background from "../assets/IMG.png"
+import {List} from '../components/Logement/List/List'
+import {SectionImage} from '../components/_Section1/_Section1.jsx'
+import background from '../assets/IMG.png'
 
 function Home() {
-    return (
-      <div>          
+  return (
+    <div>
+      {SectionImage(background, 'Chez vous, partout et ailleurs')}
 
-         { SectionImage(background,"Chez vous, partout et ailleurs")}
-          
-          <div className="List">
-            <List />
-
-          </div>
+      <div className="List">
+        <List />
       </div>
-    )
-  }
-  
-  export default Home
+    </div>
+  )
+}
+
+export default Home

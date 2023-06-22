@@ -1,53 +1,40 @@
-import ArrowDown from "../arrows/arrowDown"
+import ArrowDown from '../arrows/arrowDown'
 // import ArrowUp from "../../assets/arrowUp"
-import React,{ useState } from "react"
+import React, {useState} from 'react'
 
+import './Dropdown.scss'
 
-import "./Dropdown.scss"
+export function Dropdown(title, details) {
+  const [dropDownVisible, setDropDownVisible] = useState(false)
 
+  const showContent = () => {
+    setDropDownVisible(!dropDownVisible)
+  }
+  var classN = dropDownVisible ? 'rotate' : ''
+  return (
+    <div className={'Dropdown '}>
+      <div className="dropDownTitleDiv" onClick={showContent}>
+        <div className="dropdown-title">{title}</div>
 
-export function Dropdown(title , details){
-    
-    const [dropDownVisible,setDropDownVisible] = useState(false)
+        {/* <ArrowUp className="arrow arrowUp" /> */}
 
-    const showContent= () =>{
-        setDropDownVisible(!dropDownVisible)
-        console.log(dropDownVisible)
-    }
-     var classN = (dropDownVisible) ? "rotate": "" ; 
-        return(
+        <ArrowDown className={classN} />
 
-        <div className={"Dropdown "}>
-            <div className="dropDownTitleDiv"  onClick={showContent} >
-                <div className='dropdown-title' >{title}</div>
-                
-                {/* <ArrowUp className="arrow arrowUp" /> */}
-
-                
-                <ArrowDown className={classN}/>
-                
-                {/* {ArrowDown()} */}
-            </div>
-            {dropDownVisible &&
-                <div className="dropdown-infos">
-                                        
-                    {
-                        Array.isArray(details)
-                        ? details.map((element,index) => {
-                            return (
-                                <div key={index}>
-                                 {element} <br/>
-                                </div>
-                             
-                              );
-                          })
-                        : details    
-                    }
-                    
-                    </div>
-
-            }
-        </div>  
-
-)
-    }
+        {/* {ArrowDown()} */}
+      </div>
+      {dropDownVisible && (
+        <div className="dropdown-infos">
+          {Array.isArray(details)
+            ? details.map((element, index) => {
+                return (
+                  <div key={index}>
+                    {element} <br />
+                  </div>
+                )
+              })
+            : details}
+        </div>
+      )}
+    </div>
+  )
+}
