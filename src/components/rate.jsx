@@ -5,6 +5,7 @@ function Rate(rating) {
     var color = i <= rating ? "#FF6060" : "#E3E3E3"
     element.push(
       <svg
+        key={i}
         style={{fill: color}}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 576 512"
